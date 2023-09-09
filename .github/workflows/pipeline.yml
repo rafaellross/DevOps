@@ -14,9 +14,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install Node.js        
+        uses: actions/setup-node@v2        
+        with:          
+          node-version: 16 
+          
       - name: Install dependencies
         run: |
           npm install
+
+      - name: Install typescript
+        run: |
+          npm install -g typescript
+          
       - name: Set up Git user
         run: |
          git config --global user.name $user_name
@@ -36,6 +46,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PIPELINES }}
-          publish_dir: ./build
+          publish_dir: ./dist
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
