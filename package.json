@@ -2,7 +2,7 @@
   "name": "fiap-notes",
   "private": true,
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "https://rafaellross.github.io/DevOps",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
