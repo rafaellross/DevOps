@@ -25,7 +25,7 @@ jobs:
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.Pipelines }}
+          github_token: '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'
           repository: ${{ github.repository }}
 
       - name: Build React app
@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.Pipelines }}
+          github_token: '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'
           publish_dir: ./build
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
