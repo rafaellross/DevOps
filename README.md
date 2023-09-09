@@ -3,7 +3,6 @@
 
 ### Objetivo: 🎯 
 Implemente novas funcionalidades no fiap-notes:
-
 1) O usuário pode editar uma nota.
 2) O usuário pode filtrar notas pelo texto.
 3) O usuário pode classificar notas por prioridade.
